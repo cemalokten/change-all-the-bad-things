@@ -10,5 +10,10 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@yaireo/validator": "^3.4.0",
+    "just-validate": "^1.5.0"
   }
 }

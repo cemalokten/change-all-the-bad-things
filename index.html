@@ -5,12 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script.js"></script>
+
+
     <link rel="stylesheet" href="style.css">
     <title>CATBT</title>
 </head>
 
 <body>
+    <header> </header>
+    <main>
+
+        <section>
+            <form id="form--request" method="POST" action="./complete.html">
+
+                <label for="name">
+                    <h4>Name</h4>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required
+                        title="Please enter your name 🙂" />
+                </label>
+
+                <label for="email">
+                    <h4>Email</h4>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required />
+                </label>
+
+                <label for="phone">
+                    <h4>Phone</h4>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required
+                        pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" />
+                </label>
+
+                <label for="dob">
+                    <h4>Date of birth</h4>
+                    <input type="date" name="dob" id="dob" required />
+                </label>
+
+                <label for="email-share">
+                    <h4>Share email</h4>
+                    <input type="checkbox" name="email-share" id="email-share" />
+                </label>
+
+                <label for="phone-share">
+                    <h4>Phone email</h4>
+                    <input type="checkbox" name="phone-share" id="phone-share" />
+                </label>
+
+                <label for="phrase">
+                    <h4>Phrase</h4>
+                    <input type="text" name="pass-phrase" id="pass-phrase" pattern="" required>
+                </label>
+
+                <button type="submit" id="submit" name="request-submit">Submit</button>
+            </form>
+        </section>
+
+
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
