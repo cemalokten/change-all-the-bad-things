@@ -34,6 +34,7 @@ Font is `Apercu` (trial) by [Colophon Foundry](https://www.colophon-foundry.org/
 
 ### ⏳ Future improvements
 
+- Switch email and telephone checkboxes for radio buttons (email OR phone)
 - Create a page where all data can be seen (ideally behind some authentication)
 - Implement proper page loader, instead of `setTimeout()`
 - Send user an email to confirm their details
