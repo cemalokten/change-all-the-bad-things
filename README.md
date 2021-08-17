@@ -31,6 +31,8 @@ Font is `Apercu` (trial) by [Colophon Foundry](https://www.colophon-foundry.org/
 - [x] Tested on Android Firefox and Chrome
 - [x] Tested in Mobile developer mode on Firefox, Chrome and Edge
 - [x] Desktop version tested on Firefox, Chrome and Edge
+- [x] Lighthouse Accessibility and Best Practices scored 100
+      ![Change All Bad Things Light House Score](images/lighthouse.png)
 
 ### ⏳ Future improvements
 
