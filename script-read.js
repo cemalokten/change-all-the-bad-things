@@ -44,7 +44,7 @@ function getData() {
     .on('value', function (snapshot) {
       let i = 0;
       snapshot.forEach(function (childSnapshot) {
-        var childData = childSnapshot.val().name;
+        var childData = childSnapshot.val().name.split(' ')[0];
         i += 1;
         if (i < snapshot.numChildren()) {
           p[1].append(` ${childData},`);
