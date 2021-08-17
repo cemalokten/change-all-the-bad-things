@@ -5,65 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <link rel="stylesheet" href="style.css">
-    <title>CATBT</title>
+    <title>Change All The Bad Things</title>
 </head>
 
 <body>
-    <header> </header>
-    <main>
+
+    <main class="flex flex--center flex--column">
+
+        <section>
+            <div class="flex flex--column box ">
+                <h1>CHANGE ALL THE BAD THINGS</h1>
+                <p>We are excited to be getting organised and changing the world!</p>
+                <p>To register your interest please fill in
+                    the form below.</p>
+            </div>
+        </section>
 
         <section>
             <form id="form--request" method="POST" action="./complete.html">
 
-                <label for="name">
-                    <h4>Name</h4>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required
-                        title="Please enter your name 🙂" />
-                </label>
+                <div class="flex flex--column box">
 
-                <label for="email">
-                    <h4>Email</h4>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required />
-                </label>
+                    <label for="name">
+                        <h2>Name ↓</h2>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required
+                            title="Please enter your name 🙂" />
+                    </label>
 
-                <label for="phone">
-                    <h4>Phone</h4>
-                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required
-                        pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" />
-                </label>
+                    <label for="email">
+                        <h2>Email ↓</h2>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" />
+                    </label>
 
-                <label for="dob">
-                    <h4>Date of birth</h4>
-                    <input type="date" name="dob" id="dob" required />
-                </label>
+                    <label for="phone">
+                        <h2>Phone ↓</h2>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required
+                            pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" />
+                    </label>
 
-                <label for="email-share">
-                    <h4>Share email</h4>
-                    <input type="checkbox" name="email-share" id="email-share" />
-                </label>
+                    <label for="dob">
+                        <h2>Date of birth ↓</h2>
+                        <input type="date" name="dob" id="dob" required />
+                    </label>
 
-                <label for="phone-share">
-                    <h4>Phone email</h4>
-                    <input type="checkbox" name="phone-share" id="phone-share" />
-                </label>
+                    <h2>Please select how you would like to be contacted, if at all ↓ </h2>
+                    <label for="email-share" class="flex flex--row">
+                        <h2>Email →</h2>
+                        <div class="check--1"><input type="checkbox" name="email-share" id="email-share" /></div>
+                    </label>
 
-                <label for="phrase">
-                    <h4>Phrase</h4>
-                    <input type="text" name="pass-phrase" id="pass-phrase" pattern="" required>
-                </label>
+                    <label for="phone-share" class="flex flex--row">
+                        <h2>Phone →</h2>
+                        <div class="check--2"><input type="checkbox" name="phone-share" id="phone-share" /></div>
+                    </label>
 
-                <button type="submit" id="submit" name="request-submit">Submit</button>
+                    <label for="phrase" class="margin--top">
+                        <h2>Please show you are a human ↓</h2>
+                        <input type="text" name="pass-phrase" id="pass-phrase" pattern="" required>
+                    </label>
+
+                    <button type="submit" id="submit" name="request-submit">Submit</button>
+
+                </div>
+
             </form>
         </section>
-
-
     </main>
+
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
     <script src="script.js"></script>
-
 </body>
 
 </html>
